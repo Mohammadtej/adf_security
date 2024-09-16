@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<adfc-config xmlns="http://xmlns.oracle.com/adf/controller" version="1.2">
+  <view id="home2">
+    <page>/home2.jsf</page>
+  </view>
+  <task-flow-call id="taskFlowCall1">
+    <task-flow-reference>
+      <document>/WEB-INF/task-flow-definition.xml</document>
+      <id>task-flow-definition</id>
+    </task-flow-reference>
+  </task-flow-call>
+  <control-flow-rule id="__5">
+    <from-activity-id>home2</from-activity-id>
+    <control-flow-case id="__6">
+      <from-outcome>hereWeGo</from-outcome>
+      <to-activity-id>taskFlowCall1</to-activity-id>
+    </control-flow-case>
+  </control-flow-rule>
+</adfc-config>

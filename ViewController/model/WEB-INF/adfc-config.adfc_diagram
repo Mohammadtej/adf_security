@@ -1,0 +1,47 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<SDM>
+   <OverallProperties
+      id="OverallProperties1"/>
+   <View
+      id="View5">
+      <property
+         name="activityId">home2</property>
+      <property
+         name="x">214.5</property>
+      <property
+         name="description">&lt;html>&lt;p>&lt;b>home2&lt;/b>&lt;/p>&lt;p>Activity Type:  View&lt;/p></property>
+      <property
+         name="y">307.3672</property>
+      <property
+         name="page">/home2.jsf</property>
+      <property
+         name="exceptionHandler">false</property>
+   </View>
+   <TaskFlowCall
+      id="TaskFlowCall10">
+      <property
+         name="description">&lt;html>&lt;p>&lt;b>taskFlowCall1&lt;/b>&lt;/p>&lt;p>Activity Type:  Task Flow Call&lt;/p></property>
+      <property
+         name="activityId">taskFlowCall1</property>
+      <property
+         name="x">407.0</property>
+      <property
+         name="y">273.73438</property>
+      <property
+         name="documentReference">/WEB-INF/task-flow-definition.xml</property>
+      <property
+         name="exceptionHandler">false</property>
+      <property
+         name="taskFlowId">task-flow-definition</property>
+   </TaskFlowCall>
+   <ControlFlowCase
+      islink="true"
+      id="ControlFlowCase11"
+      from="View5"
+      to="TaskFlowCall10">
+      <property
+         name="fromOutcome">hereWeGo</property>
+      <property
+         name="sdm:polyPoints">R50,255.5,307.30078,366.0,273.66797,L50</property>
+   </ControlFlowCase>
+</SDM>

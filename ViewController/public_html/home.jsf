@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<af:pageTemplateDef xmlns:af="http://xmlns.oracle.com/adf/faces/rich" var="attrs" definition="private"
+                    xmlns:afc="http://xmlns.oracle.com/adf/faces/rich/component" xmlns:h="http://java.sun.com/jsf/html">
+    <af:xmlContent>
+        <afc:component>
+            <afc:description/>
+            <afc:display-name>home</afc:display-name>
+        </afc:component>
+    </af:xmlContent>
+    <af:panelGridLayout id="pt_pgl1">
+        <af:gridRow height="50px" id="pt_gr2">
+            <af:gridCell width="100%" halign="stretch" valign="stretch" id="pt_gc2">
+                <af:button text="button 1" id="pt_b1"/>
+                <!-- Header -->
+            </af:gridCell>
+        </af:gridRow>
+        <af:gridRow height="100%" id="pt_gr1">
+            <af:gridCell width="100%" halign="stretch" valign="stretch" id="pt_gc1">
+                <!-- Content -->
+                <af:menu text="menu 1" id="pt_m1"/>
+                <af:link text="To PM Dashboard" id="pt_l1" action="toPMDashboardLink"/>
+                <af:inputText label="Label 1" id="pt_it1"/>
+                <af:inputText label="Label 2" id="pt_it2"/>
+            </af:gridCell>
+        </af:gridRow>
+    </af:panelGridLayout>
+</af:pageTemplateDef>
